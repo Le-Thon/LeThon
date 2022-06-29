@@ -30,9 +30,9 @@ except Exception as e:
     sys.exit()
 
 # try:
-# LOGS.info("يتم تفعيل جمثون")
+# LOGS.info("يتم تفعيل ليثون")
 # sbb_b.loop.run_until_complete(love())
-# LOGS.info("تم تفعيل جمثون")
+# LOGS.info("تم تفعيل ليثون")
 # except Exception as meo:
 #  LOGS.error(f"- {meo}")
 
@@ -57,10 +57,10 @@ async def startup_process():
     await load_plugins("plugins")
     await load_plugins("assistant")
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
-    print("تم الان بنجاح اكتمال تنصيب بوت جمثون !!!")
+    print("تم الان بنجاح اكتمال تنصيب بوت ليثون !!!")
     print(
         f"مبروك الان اذهب في التلجرام و ارسل {cmdhr}الاوامر لرؤية اذا كان البوت شغال\
-        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/jmthon_support"
+        \n اذا احتجت مساعده اذهب الى مجموعه https://t.me/gggne"
     )
     print("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖")
     await verifyLoggerGroup()
