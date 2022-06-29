@@ -12,8 +12,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.0.6"
 __license__ = "رخصة جنو أفيرو العمومية v3.0"
-__author__ = "sbb_b "
-__copyright__ = f"حقوق جمثون (C) 2020 - 2022  {__author__}"
+__author__ = " gggne "
+__copyright__ = f"حقوق ليثون (C) 2020 - 2022  {__author__}"
 
 sbb_b.version = __version__
 sbb_b.tgbot.version = __version__
@@ -32,8 +32,8 @@ def close_connection(*_):
 
 signal.signal(signal.SIGTERM, close_connection)
 
-if Config.UPSTREAM_REPO == "sbb_b":
-    UPSTREAM_REPO_URL = "https://github.com/sbb-b/sbb_b"
+if Config.UPSTREAM_REPO == "gggne":
+    UPSTREAM_REPO_URL = "https://github.com/Le-Thon/LeThon"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
