@@ -9,7 +9,7 @@ from wand.color import Color
 from wand.drawing import Drawing
 from wand.image import Image as gggneimage
 
-from .utils import _gggneutils
+from .utils import _utils
 
 MARGINS = [50, 150, 250, 350, 450]
 
