@@ -1,5 +1,5 @@
 from . import fonts
-from . import memeshelper as sbb_bmemes
+from . import memeshelper as gggnememes
 from .aiohttp_helper import AioHttp
 from .utils import *
 
