@@ -13,7 +13,7 @@ while flag:
         from .progress import *
         from .qhelper import process
         from .tools import *
-        from .utils import _format, _tools, _utils
+        from .utils import _format, _gggnetools, _gggneutils
 
         break
     except ModuleNotFoundError as e:
