@@ -6,8 +6,8 @@ check = 0
 while flag:
     try:
         from . import format as _format
-        from . import tools as _gggnetools
-        from . import utils as _gggneutils
+        from . import tools as _sbb_btools
+        from . import utils as _sbb_butils
         from .events import *
         from .format import *
         from .tools import *
