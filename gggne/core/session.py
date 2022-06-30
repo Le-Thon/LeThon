@@ -4,7 +4,7 @@ from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 
 from ..Config import Config
-from .client import JmthonUserBotClient
+from .client import LethonUserBotClient
 
 __version__ = "2.10.6"
 
@@ -16,7 +16,7 @@ else:
     session = "gggne"
 
 try:
-    gggne = JmthonUserBotClient(
+    gggne = LethonUserBotClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
@@ -30,7 +30,7 @@ except Exception as e:
     print(f"[STRING SESSION] - {str(e)}")
     sys.exit()
 
-gggne.tgbot = tgbot = JmthonUserBotClient(
+gggne.tgbot = tgbot = LethonUserBotClient(
     session="gggneTgbot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
