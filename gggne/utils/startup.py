@@ -73,10 +73,10 @@ async def startupmessage():
         if BOTLOG:
             Config.gggneLOGO = await gggne.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/b81fe3118d5a1f987e6e2.jpg",
+                "https://telegra.ph/file/9b6ee8a27e8e3d32d9751.jpg",
                 caption="❃ عزيزي المستخدم تم تنصيب سورس ليثون لك بنجاح لمعرفه اوامر السورس؛ \n`.الاوامر`",
                 buttons=[
-                    (Button.url("مجموعة المساعده", "https://t.me/jmthon_support"),)
+                    (Button.url("المطور", "https://t.me/gggne"),)
                 ],
             )
     except Exception as e:
@@ -199,15 +199,15 @@ async def saves():
     except Exception as e:
         print(str(e))
     try:
-        await gggne(JoinChannelRequest("@jmthon"))
+        await gggne(JoinChannelRequest("@gggne"))
     except BaseException:
         pass
     try:
-        await gggne(JoinChannelRequest("@RR7PP"))
+        await gggne(JoinChannelRequest("@IIIZF"))
     except BaseException:
         pass
     try:
-        await gggne(JoinChannelRequest("@RR9R4"))
+        await gggne(JoinChannelRequest("@QHR_1"))
     except BaseException:
         pass
 
