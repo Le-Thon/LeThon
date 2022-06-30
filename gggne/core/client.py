@@ -185,8 +185,8 @@ class LethonUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**⪼ تقرير خطأ جمثون 𓆰،**\n\n"
-                        link = "[هنا](https://t.me/Lethon_support)"
+                        text = "**⪼ تقرير خطأ ليثون 𓆰،**\n\n"
+                        link = "[هنا](https://t.me/gggne)"
                         text += "يمكنك التبليغ عن هذه المشكله"
                         text += f"- فقط قم بتوجيه الرساله هنا {link}.\n"
                         text += "لم يتم حفظ اي شي عدا المشكله وتاريخ حدوثها\n\n"
