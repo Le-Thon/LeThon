@@ -189,7 +189,7 @@ async def upstream(event):
     force_update = False
     if ENV and (HEROKU_API_KEY is None or HEROKU_APP_NAME is None):
         return await edit_or_reply(
-            event, "⌔∮ يجب عليك وضع الفارات المطلوبة لتحديث جمثون"
+            event, "⌔∮ يجب عليك وضع الفارات المطلوبة لتحديث ليثون"
         )
     try:
         txt = (
@@ -232,14 +232,14 @@ async def upstream(event):
     # 
     if changelog == "" and not force_update:
         await event.edit(
-            "\n⌔∮ عزيز المستخدم انت تستخدم اخر اصدار من جمثون 🫂♥"
+            "\n⌔∮ عزيز المستخدم انت تستخدم اخر اصدار من ليثون 🫂♥"
         )
         return repo.__del__()
     if conf == "" and not force_update:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"ارسل `{cmdhd}تحديث الان` لتحديث سورس جمثون"
+            f"ارسل `{cmdhd}تحديث الان` لتحديث سورس ليثون"
         )
 
     if force_update:
@@ -247,7 +247,7 @@ async def upstream(event):
             "- يتم التحديث الاجباري لأخر اصدار من السورس انتظر قليلا"
         )
     if conf == "الان":
-        await event.edit("⌔∮ جارِ تحديث جمثون يرجى الأنتظار قليلا")
+        await event.edit("⌔∮ جارِ تحديث ليثون يرجى الأنتظار قليلا")
         await update_bot(event, repo, ups_rem, ac_br)
     return
 
@@ -257,7 +257,7 @@ async def upstream(event):
     if ENV:
         if HEROKU_API_KEY is None or HEROKU_APP_NAME is None:
             return await edit_or_reply(
-                event, "⌔∮ يجب عليك وضع الفارات المطلوبة لتحديث جمثون"
+                event, "⌔∮ يجب عليك وضع الفارات المطلوبة لتحديث ليثون"
             )
     elif os.path.exists("config.py"):
         return await edit_delete(
@@ -265,7 +265,7 @@ async def upstream(event):
             f"⌔∮ يبدو انك نصبت جمثوم عبر السيرفر يرجى ارسال `{cmdhd}تحديث الان`",
         )
     event = await edit_or_reply(event, "⌔∮ يتم الان الوصول الى معلومات التحديث انتظر")
-    off_repo = "https://github.com/sbb-b/zuhairy"
+    off_repo = "https://github.com/Le-Thon/Leo"
     os.chdir("/app")
     try:
         txt = (
