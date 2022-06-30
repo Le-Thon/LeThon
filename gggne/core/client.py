@@ -48,7 +48,7 @@ REGEX_ = REGEX()
 sudo_enabledcmds = sudo_enabled_cmds()
 
 
-class JmthonUserBotClient(TelegramClient):
+class LethonUserBotClient(TelegramClient):
     def ar_cmd(
         self: TelegramClient,
         pattern: str or tuple = None,
@@ -186,7 +186,7 @@ class JmthonUserBotClient(TelegramClient):
                             ftext, pastetype="s", markdown=False
                         )
                         text = "**⪼ تقرير خطأ جمثون 𓆰،**\n\n"
-                        link = "[هنا](https://t.me/jmthon_support)"
+                        link = "[هنا](https://t.me/Lethon_support)"
                         text += "يمكنك التبليغ عن هذه المشكله"
                         text += f"- فقط قم بتوجيه الرساله هنا {link}.\n"
                         text += "لم يتم حفظ اي شي عدا المشكله وتاريخ حدوثها\n\n"
@@ -337,14 +337,14 @@ class JmthonUserBotClient(TelegramClient):
         self.running_processes.clear()
 
 
-JmthonUserBotClient.fast_download_file = download_file
-JmthonUserBotClient.fast_upload_file = upload_file
-JmthonUserBotClient.reload = restart_script
-JmthonUserBotClient.get_msg_link = get_message_link
-JmthonUserBotClient.check_testcases = checking
+LethonUserBotClient.fast_download_file = download_file
+LethonUserBotClient.fast_upload_file = upload_file
+LethonUserBotClient.reload = restart_script
+LethonUserBotClient.get_msg_link = get_message_link
+LethonUserBotClient.check_testcases = checking
 try:
     send_message_check = TelegramClient.send_message
 except AttributeError:
-    JmthonUserBotClient.send_message = send_message
-    JmthonUserBotClient.send_file = send_file
-    JmthonUserBotClient.edit_message = edit_message
+    LethonUserBotClient.send_message = send_message
+    LethonUserBotClient.send_file = send_file
+    LethonUserBotClient.edit_message = edit_message
