@@ -310,6 +310,7 @@ async def variable(event):
         )
     exe = event.text[5:]
     iraq = "Asia/Baghdad"
+    morocco = "Europe/Lisbon"
     cairo = "Africa/Cairo"
     jordan = "Asia/Amman"
     yman = "Asia/Aden"
@@ -400,6 +401,20 @@ async def variable(event):
                 "**⌔∮ تم بنجاح تغيير الوقت الى اليمن\n\n❃ جار اعادة تشغيل السورس انتظر من 2-5 دقائق ليتشغل مره اخرى**",
             )
         heroku_var[variable] = Syria
+    if exe == "وقت المغرب":
+        variable = "TZ"
+        await asyncio.sleep(1.5)
+        if variable in heroku_var:
+            await edit_or_reply(
+                event,
+                "**⌔∮ تم بنجاح تغيير الوقت الى المغرب\n\n❃ جار اعادة تشغيل السورس انتظر من 2-5 دقائق ليتشغل مره اخرى**",
+            )
+        else:
+            await edit_or_reply(
+                event,
+                "**⌔∮ تم بنجاح تغيير الوقت الى المغرب\n\n❃ جار اعادة تشغيل السورس انتظر من 2-5 دقائق ليتشغل مره اخرى**",
+            )
+        heroku_var[variable] = morocco
 
 
 @gggne.ar_cmd(pattern="استخدامي$")
