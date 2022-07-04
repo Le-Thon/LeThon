@@ -273,6 +273,30 @@ async def permalink(mention):
         mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه مدلـول 😭🐴"
     )
 
+@gggne.ar_cmd(pattern="رفع قحبة(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه قحـبة 🤤🤣"
+    )
+
+@gggne.ar_cmd(pattern="رفع بيست(?: |$)(.*)")
+async def permalink(mention):
+    user, custom = await get_user_from_event(mention)
+    if not user:
+        return
+    if custom:
+        return await edit_or_reply(mention, f"[{custom}](tg://user?id={user.id})")
+    tag = user.first_name.replace("\u2060", "") if user.first_name else user.username
+    await edit_or_reply(
+        mention, f"- المستخدم [{tag}](tg://user?id={user.id}) \n- تـم رفعـه بيسـت فـرند خـو البنـات 😭🐴"
+    )
+
 
 @gggne.on(admin_cmd(pattern="نزوج(?:\s|$)([\s\S]*)"))
 async def rzfun(mention):
